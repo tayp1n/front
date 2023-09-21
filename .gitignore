@@ -1,0 +1,87 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+services/admin_panel/src/assets/export/*.csv
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# docs
+core/static/doc
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+.mypy_cache/
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+
+
+#PyCharm
+.idea/
+*.iml
+
+# Rope
+.ropeproject
+
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# OS hidden files
+.DS_Store
+
+# Vim
+.vim
+*.swp
+
+# Exclude cgames/bin from ignore
+!cgames/bin/
+
+.env/
+.env3/
+media/
+core/data/
+venv/
+.vscode/
+.version.json
+
+
+/.mypy_cache/
+/.vagrant/
+.next
+services/socialauth/static/out
+node_modules
+/services/imagination/cache
+
+# lowdefy
+.lowdefy/
+.lowdefy/**
