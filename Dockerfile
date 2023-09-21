@@ -12,12 +12,14 @@ COPY pyproject.toml poetry.lock /code/service/
 WORKDIR /code/service
 
 # Installing requirements
-RUN poetry install --without dev
+RUN poetry install
 
 # Copying actuall application
 COPY . /code/service/
-RUN mkdir /settings && mv /code/service/_service /settings/_service
-RUN poetry install --without dev
+
+COPY settings /code/service/settings
+
+RUN poetry install
 
 ENV SETTINGS_MODULE=ci
 

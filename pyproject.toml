@@ -2,15 +2,18 @@
 name = "service"
 version = "0.1.0"
 description = ""
-authors = ["Nazarii Arshynskyi <na@ggr.group>"]
+authors = ["Nazarii Arshynskyi <na@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.11,<3.13"
 black = "^23.9.1"
 flake8 = "^6.1.0"
 mypy = "^1.5.1"
 pandas-stubs = "^2.0.3.230814"
+dash = "^2.13.0"
+pandas = "^2.1.1"
+scikit-image = "^0.21.0"
 
 
 [build-system]
