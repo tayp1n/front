@@ -9,7 +9,7 @@ SERVER_PORT: int = 9090
 
 WORKERS_COUNTS: int = 5
 
-RELOAD: bool = False
+DEBUG: bool = True
 
 
 class BaseSettings(metaclass=ABCMeta):

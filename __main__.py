@@ -1,8 +1,7 @@
-import uvicorn
 from app import init_settings
+from app.web import get_app
 
-
-init_settings()
+# init_settings()
 
 
 def main() -> None:
@@ -10,13 +9,11 @@ def main() -> None:
 
     import settings
 
-    uvicorn.run(
-        "app.web:get_app",
-        workers=settings.WORKERS_COUNTS,
+    app = get_app()
+    app.run_server(
         host=settings.SERVER_HOST,
         port=settings.SERVER_PORT,
-        reload=settings.RELOAD,
-        factory=True,
+        debug=settings.DEBUG,
     )
 
 
