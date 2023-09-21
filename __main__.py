@@ -1,4 +1,3 @@
-from app import init_settings
 from app.web import get_app
 
 # init_settings()
