@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "service"
+version = "0.1.0"
+description = ""
+authors = ["Nazarii Arshynskyi <na@ggr.group>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+black = "^23.9.1"
+flake8 = "^6.1.0"
+mypy = "^1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
